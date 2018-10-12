@@ -3,8 +3,7 @@ import pgzrun
 import os
 import spotify_app
 
-WIDTH = 400
-HEIGHT = 400
+WIDTH, HEIGHT = 400, 400
 
 print('Sound Cloud App')
 spotify_app.spotify_setup()
