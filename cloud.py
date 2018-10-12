@@ -1,10 +1,7 @@
-from dotenv import load_dotenv
 from weather import Weather, Unit
 import pgzrun
 import os
 import spotify_app
-
-load_dotenv()
 
 WIDTH = 400
 HEIGHT = 400
