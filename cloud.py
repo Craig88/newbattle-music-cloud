@@ -7,8 +7,8 @@ HEIGHT = 400
 print('Sound Cloud App')
 
 weather = Weather(unit=Unit.CELSIUS)
-location = weather.lookup_by_location('Edinburgh, UK')
 condition = location.condition
+location = weather.lookup_by_location('Perth, WA')
 
 
 def draw():
