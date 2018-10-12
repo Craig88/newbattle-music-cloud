@@ -1,14 +1,21 @@
+from dotenv import load_dotenv
 from weather import Weather, Unit
 import pgzrun
+import os
+import spotify_app
+
+load_dotenv()
 
 WIDTH = 400
 HEIGHT = 400
 
 print('Sound Cloud App')
+spotify_app.spotify_setup()
 
 weather = Weather(unit=Unit.CELSIUS)
-condition = location.condition
 location = weather.lookup_by_location('Perth, WA')
+weather_condition = location.condition
+spotify_app.play_track_for_weather(weather_condition)
 
 
 def draw():
