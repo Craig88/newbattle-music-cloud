@@ -31,7 +31,7 @@ def spotify_setup():
 def play_track_for_weather(weather):
     print("This plays the track for the weather")
     print(weather.text)
-    if weather.text == "Cloudy":
+    if weather.text == "Partly Cloudy":
         print("We need to play a cloudy track")
         track = sp.track(cloudy_track)
         preview_track = track['preview_url']
