@@ -13,7 +13,9 @@ scope = 'user-library-read'
 
 umbrella = 'spotify:track:5i66xrvSh1MjjyDd6zcwgj'
 sunny = 'spotify:track:3pf96IFggfQuT6Gafqx2rt'
-cloudy_track = 'spotify:track:5atQ2haKP5LT65WM0KUts3'
+cloudy_track = 'spotify:track:5icOoE6VgqFKohjWWNp0Ac'
+
+debug_mode = True;
 
 
 def spotify_setup():
@@ -31,7 +33,7 @@ def spotify_setup():
 def play_track_for_weather(weather):
     print("This plays the track for the weather")
     print(weather.text)
-    if weather.text == "Partly Cloudy":
+    if weather.text == "Partly Cloudy" or (debug_mode):
         print("We need to play a cloudy track")
         track = sp.track(cloudy_track)
         preview_track = track['preview_url']
