@@ -1,4 +1,4 @@
-from yahoo_weather import yahoo_weather
+from yahoo_weather.weather import YahooWeather
 from yahoo_weather.config.units import Unit
 import pgzrun
 import os
@@ -10,10 +10,10 @@ print('Sound Cloud App')
 spotify_app.spotify_setup()
 
 
-weather = yahoo_weather.YahooWeather(
+weather = YahooWeather(
         APP_ID="***REMOVED***",
-        apikey="***REMOVED***",
-        apisecret="***REMOVED***")
+        api_key="***REMOVED***",
+        api_secret="***REMOVED***")
 
 weather.get_yahoo_weather_by_city("Glasgow", Unit.celsius)
 print(weather.condition.text)
