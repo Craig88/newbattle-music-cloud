@@ -15,6 +15,8 @@ pip3 install pgzero
 pip install -r requirements.txt
 ```
 
+
+
 ---
 
 ###Yahoo Weather API keys)
@@ -26,3 +28,8 @@ Client ID (Consumer Key)
 Client Secret (Consumer Secret)
     ***REMOVED***
 ```
+
+
+sudo apt-get install python-gst-1.0
+
+(might also need? gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools _
