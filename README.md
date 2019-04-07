@@ -34,4 +34,15 @@ sudo apt-get install python-gst-1.0
 (might also need? gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools)
 
 Speaker test:
-speaker-test -c2 -twav -l7
+speaker-test -c2
+
+
+Command line
+
+The following command, entered in the command line, will switch the audio output to HDMI:
+
+amixer cset numid=3 2
+
+Here the output is being set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic.
+
+amixer cset numid=3 1
