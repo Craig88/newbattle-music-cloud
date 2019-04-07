@@ -15,7 +15,6 @@ or
 ```sh
 pip install -r requirements.txt
 ```
-
 ---
 
 ### Yahoo Weather API keys)
