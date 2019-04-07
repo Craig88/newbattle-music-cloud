@@ -10,16 +10,15 @@ pip3 install pyobjc
 pip3 install pygame
 pip3 install pgzero
 ```
+or
 
 ```sh
 pip install -r requirements.txt
 ```
 
-
-
 ---
 
-###Yahoo Weather API keys)
+### Yahoo Weather API keys)
 ```
 App ID
     ***REMOVED***
@@ -32,4 +31,7 @@ Client Secret (Consumer Secret)
 
 sudo apt-get install python-gst-1.0
 
-(might also need? gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools _
+(might also need? gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools)
+
+Speaker test:
+speaker-test -c2 -twav -l7
