@@ -29,4 +29,5 @@ def draw():
     screen.draw.text('Sound Cloud App', (0, 0))
     screen.draw.text(weather_condition.text, (100, 100))
 
+
 pgzrun.go()
