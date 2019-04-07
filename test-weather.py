@@ -5,16 +5,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-id = os.getenv('YAHOO_APP_ID')
-key = os.getenv('YAHOO_API_KEY')
-secret = os.getenv('YAHOO_API_SECRET')
+my_id = os.getenv('YAHOO_APP_ID')
+my_key = os.getenv('YAHOO_API_KEY')
+my_secret = os.getenv('YAHOO_API_SECRET')
 
-city_name = "Glasgow"
+city_name = "Edinburgh"
 
 weather = YahooWeather(
-        APP_ID=id,
-        api_key=key,
-        api_secret=secret)
+        APP_ID=my_id,
+        api_key=my_key,
+        api_secret=my_secret)
 
 weather.get_yahoo_weather_by_city(city_name, Unit.celsius)
 print(city_name)
