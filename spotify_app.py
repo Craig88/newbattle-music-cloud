@@ -1,7 +1,7 @@
 import spotipy
 import spotipy.util as util
 import os
-from playsound import playsound
+import vlc
 from dotenv import load_dotenv
 
 debug_mode = True
@@ -38,4 +38,5 @@ def play_track_for_weather(weather):
         track = sp.track(cloudy_track)
         preview_track = track['preview_url']
         print(preview_track)
-        playsound(preview_track, block=False)  # don't block it!
+        track = vlc.MediaPlayer(preview_track)
+        track.play()
