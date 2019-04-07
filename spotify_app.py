@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-username = os.getenv('USERNAME')
-my_id = os.getenv('CLIENT_ID')
-my_secret = os.getenv('CLIENT_SECRET')
+username = os.getenv('SPOTIFY_USERNAME')
+my_id = os.getenv('SPOTIFY_CLIENT_ID')
+my_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
 scope = 'user-library-read'
 
 umbrella = 'spotify:track:5i66xrvSh1MjjyDd6zcwgj'
