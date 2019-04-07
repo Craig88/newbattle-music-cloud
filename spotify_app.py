@@ -4,6 +4,8 @@ import os
 from playsound import playsound
 from dotenv import load_dotenv
 
+debug_mode = True
+
 load_dotenv()
 
 username = os.getenv('SPOTIFY_USERNAME')
@@ -14,8 +16,6 @@ scope = 'user-library-read'
 umbrella = 'spotify:track:5i66xrvSh1MjjyDd6zcwgj'
 sunny = 'spotify:track:3pf96IFggfQuT6Gafqx2rt'
 cloudy_track = 'spotify:track:5icOoE6VgqFKohjWWNp0Ac'
-
-debug_mode = True;
 
 
 def spotify_setup():
