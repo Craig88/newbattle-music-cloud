@@ -14,7 +14,7 @@ my_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
 scope = 'user-library-read'
 
 umbrella = 'spotify:track:5i66xrvSh1MjjyDd6zcwgj'
-sunny = 'spotify:track:3pf96IFggfQuT6Gafqx2rt'
+sunny_track = 'spotify:track:3pf96IFggfQuT6Gafqx2rt'
 cloudy_track = 'spotify:track:5icOoE6VgqFKohjWWNp0Ac'
 
 
@@ -35,7 +35,7 @@ def play_track_for_weather(weather):
     print(weather.text)
     if weather.text == "Partly Cloudy" or (debug_mode):
         print("We need to play a cloudy track")
-        track = sp.track(cloudy_track)
+        track = sp.track(sunny_track)
         preview_track = track['preview_url']
         print(preview_track)
         track = vlc.MediaPlayer(preview_track)
