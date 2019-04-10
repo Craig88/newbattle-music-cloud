@@ -6,7 +6,6 @@ numpy==1.16.2
 oauth2==1.9.0.post1
 oauthlib==3.0.1
 pgzero==1.2
-playsound==1.2.2
 pygame==1.9.5
 pyobjc==5.2
 pyobjc-core==5.2
@@ -110,6 +109,5 @@ python-dotenv==0.10.1
 requests==2.21.0
 requests-oauthlib==1.2.0
 spotipy==2.4.4
-twython==3.7.0
 urllib3==1.24.1
 yahoo-weather==1.0.6
