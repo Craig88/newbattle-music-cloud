@@ -7,7 +7,7 @@ import weather_app
 
 WIDTH, HEIGHT = 400, 400
 
-print('Sound Cloud App')
+print("Sound Cloud App")
 spotify_app.spotify_setup()
 weather = weather_app.weather_setup()
 
