@@ -24,4 +24,4 @@ print(city_name)
 print(weather.condition.text)
 print(weather.condition.temperature)
 
-print('End Weather Test')
+print('End Weather Test.')
