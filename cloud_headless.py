@@ -1,7 +1,5 @@
 from yahoo_weather.weather import YahooWeather
 from yahoo_weather.config.units import Unit
-#import pgzrun
-import os
 import spotify_app
 import weather_app
 

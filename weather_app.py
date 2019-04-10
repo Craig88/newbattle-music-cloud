@@ -6,6 +6,7 @@ my_id = os.getenv('YAHOO_APP_ID')
 my_key = os.getenv('YAHOO_API_KEY')
 my_secret = os.getenv('YAHOO_API_SECRET')
 
+
 def weather_setup():
     weather = YahooWeather(
             APP_ID=my_id,
