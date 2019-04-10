@@ -5,6 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+print('Testing Weather...')
+
+
 my_id = os.getenv('YAHOO_APP_ID')
 my_key = os.getenv('YAHOO_API_KEY')
 my_secret = os.getenv('YAHOO_API_SECRET')
@@ -20,3 +23,5 @@ weather.get_yahoo_weather_by_city(city_name, Unit.celsius)
 print(city_name)
 print(weather.condition.text)
 print(weather.condition.temperature)
+
+print('End Weather Test')
