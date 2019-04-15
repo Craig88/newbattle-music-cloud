@@ -55,11 +55,15 @@ gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
 <https://crontab-generator.org/>
 <https://www.raspberrypi.org/documentation/linux/usage/cron.md>
 
+```sh
 python3 test_cron.py >> log.txt
 
 python3 /home/pi/Desktop/newbattle-sound-cloud/test_cron.py >> /home/pi/Desktop/newbattle-sound-cloud/log.txt
 
 * * * * * python3 /home/pi/Desktop/newbattle-sound-cloud/test_cron.py >> /home/pi/Desktop/newbattle-sound-cloud/log.txt
+
+* * * * * python3 /home/pi/Desktop/newbattle-sound-cloud/test_vlc.py >> /home/p$
+```
 
 
 Sound levels:
