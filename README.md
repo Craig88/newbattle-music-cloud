@@ -51,3 +51,10 @@ Here the output is being set to 2, which is HDMI. Setting the output to 1 switch
 ### Other useful titbits
 Other libraries that might be needed:
 gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
+
+<https://crontab-generator.org/>
+<https://www.raspberrypi.org/documentation/linux/usage/cron.md>
+
+python3 test_cron.py >> log.txt
+
+>>
