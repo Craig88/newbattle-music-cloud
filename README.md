@@ -57,4 +57,12 @@ gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
 
 python3 test_cron.py >> log.txt
 
->>
+python3 /home/pi/Desktop/newbattle-sound-cloud/test_cron.py >> /home/pi/Desktop/newbattle-sound-cloud/log.txt
+
+* * * * * python3 /home/pi/Desktop/newbattle-sound-cloud/test_cron.py >> /home/pi/Desktop/newbattle-sound-cloud/log.txt
+
+
+Sound levels:
+```sh
+alsamixer
+```
