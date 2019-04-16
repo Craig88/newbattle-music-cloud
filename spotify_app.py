@@ -2,7 +2,9 @@ import spotipy
 import spotipy.util as util
 import os
 import vlc
+import time
 from dotenv import load_dotenv
+from sys import exit
 
 debug_mode = True
 
@@ -33,6 +35,7 @@ def spotify_setup():
 def play_track_for_weather(weather):
     print("This plays the track for the weather")
     print(weather.text)
+
     if weather.text == "Partly Cloudy" or (debug_mode):
         print("We need to play a cloudy track")
         track = sp.track(sunny_track)
@@ -40,3 +43,12 @@ def play_track_for_weather(weather):
         print(preview_track)
         track = vlc.MediaPlayer(preview_track)
         track.play()
+
+        while True:
+            pass
+            time.sleep(1)
+            print("Checking state..")
+            print(track.get_state())
+            if (str(track.get_state()) == "State.Ended"):
+                print("This is finished now")
+                exit()
