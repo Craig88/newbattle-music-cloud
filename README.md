@@ -70,3 +70,8 @@ Sound levels:
 ```sh
 alsamixer
 ```
+
+
+https://developer.yahoo.com/weather/documentation.html
+
+Condition codes <https://developer.yahoo.com/weather/documentation.html#codes>
