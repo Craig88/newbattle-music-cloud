@@ -20,4 +20,4 @@ while True:
     # print(media.get_state())
     if (str(media.get_state()) == "State.Ended"):
         print("This is finished now")
-        sys.exit()
+        break
