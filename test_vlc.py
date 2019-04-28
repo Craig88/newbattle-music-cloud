@@ -1,6 +1,5 @@
 import vlc
 import time
-import sys
 
 print("Testing VLC player...")
 
