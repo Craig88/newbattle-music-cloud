@@ -13,9 +13,11 @@ my_id = os.getenv('SPOTIFY_CLIENT_ID')
 my_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
 scope = 'user-library-read'
 
-showers_track = 'spotify:track:5i66xrvSh1MjjyDd6zcwgj'
-sunny_track = 'spotify:track:3pf96IFggfQuT6Gafqx2rt'
-cloudy_track = 'spotify:track:5icOoE6VgqFKohjWWNp0Ac'
+# Links to Songs on Spotify
+debug_track = "spotify:track:5p1ex0pXv6jSPJ6QbumQpD"  # Piece of your heart by Meduza
+showers_track = "spotify:track:5i66xrvSh1MjjyDd6zcwgj"  # Umbrella by Rihanna
+sunny_track = "spotify:track:3pf96IFggfQuT6Gafqx2rt"  # Sunny by Boney M
+cloudy_track = "spotify:track:3xhhsvui4g3hkMtA89f2uX"  # Cloudbusting by Just Us
 
 debug_mode = False  # set to True to turn on a debugging mode
 
