@@ -13,9 +13,11 @@ my_id = os.getenv('SPOTIFY_CLIENT_ID')
 my_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
 scope = 'user-library-read'
 
-showers_track = 'spotify:track:5i66xrvSh1MjjyDd6zcwgj'
-sunny_track = 'spotify:track:3pf96IFggfQuT6Gafqx2rt'
-cloudy_track = 'spotify:track:5icOoE6VgqFKohjWWNp0Ac'
+# Links to Songs on Spotify
+debug_track = "spotify:track:5p1ex0pXv6jSPJ6QbumQpD"  # Piece of your heart by Meduza
+showers_track = "spotify:track:5i66xrvSh1MjjyDd6zcwgj"  # Umbrella by Rihanna
+sunny_track = "spotify:track:3pf96IFggfQuT6Gafqx2rt"  # Sunny by Boney M
+cloudy_track = "spotify:track:3xhhsvui4g3hkMtA89f2uX"  # Cloudbusting by Just Us
 
 debug_mode = False  # set to True to turn on a debugging mode
 
@@ -34,10 +36,20 @@ def spotify_setup():
 
 
 def play_track_for_weather(weather):
-    print("This plays the track for the weather")
-    print(weather.text)
+    print("This plays the track for the weather %s" % weather.text)
+    print("This plays the track for the condition code %s" % weather.code)
 
-    if weather.text == "Sunny" or (debug_mode):
+    # Yahoo! weather condition codes found at
+    # https://developer.yahoo.com/weather/documentation.html#codes
+
+    if (debug_mode):
+        print("Playing track - Debug mode")
+        track = sp.track(debug_track)
+        preview_track = track['preview_url']
+        song = vlc.MediaPlayer(preview_track)
+        song.play()
+
+    elif weather.code == 32:  # Code 32: Sunny
         print("We need to play a Sunny track")
         track = sp.track(sunny_track)
         preview_track = track['preview_url']
@@ -45,7 +57,7 @@ def play_track_for_weather(weather):
         track = vlc.MediaPlayer(preview_track)
         track.play()
 
-    elif weather.text == "Showers":
+    elif weather.code == 11:  # Code 11: Showers
         print("We need to play a Showers track")
         track = sp.track(showers_track)
         preview_track = track['preview_url']
@@ -53,15 +65,22 @@ def play_track_for_weather(weather):
         track = vlc.MediaPlayer(preview_track)
         track.play()
 
+    elif weather.code == 28:  # Code 28: Mostly Cloudy (day)
+        print("We need to play a Mostly Cloudy")
+        track = sp.track(cloudy_track)
+        preview_track = track['preview_url']
+        print(preview_track)
+        track = vlc.MediaPlayer(preview_track)
+        track.play()
+
     else:
-        print("Not a recognised weather condition")
+        print("Not a recognised weather code.")
         return
 
     while True:
         time.sleep(1)
-        print("Checking state..")
-        print(track.get_state())
-        if (str(track.get_state()) == "State.Ended"):
-            print("This track has finished now")
-            # exit()
+        print("Checking state...")
+        print(song.get_state())
+        if (str(song.get_state()) == "State.Ended"):
+            print("This song has finished now")
             return
