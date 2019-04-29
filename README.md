@@ -27,7 +27,13 @@ sudo apt-get install pulseaudio
 API keys for Yahoo and Spotify are stored in the `.env` file.
 Treat these like passwords and keep them secret.
 
-#### Testing
+### Testing
+
+Internet connection test:
+```sh
+ping bbc.co.uk
+```
+
 Sound test:
 ```sh
 speaker-test -c2
@@ -51,11 +57,11 @@ python3 test_vlc.py
 python3 cloud.py
 ```
 
-###Using Cron to schedule the app
-
 ### Other useful titbits
 Other libraries that might be needed:
 gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
+
+### Using Cron to schedule the app
 
 <https://crontab-generator.org/>
 <https://www.raspberrypi.org/documentation/linux/usage/cron.md>
@@ -80,4 +86,4 @@ This command switches the audio output to HDMI:
 amixer cset numid=3 2
 ```
 
-Here the output is being set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic.
+Here the output is set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic.
