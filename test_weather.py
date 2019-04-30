@@ -5,14 +5,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-print('Testing Weather...')
+print("Testing Weather...")
 
 
 my_id = os.getenv('YAHOO_APP_ID')
 my_key = os.getenv('YAHOO_API_KEY')
 my_secret = os.getenv('YAHOO_API_SECRET')
 
-city_name = "Edinburgh"
+city_name = "Glasgow"
 
 weather = YahooWeather(
         APP_ID=my_id,
@@ -24,4 +24,4 @@ print(city_name)
 print(weather.condition.text)
 print(weather.condition.temperature)
 
-print('End Weather Test.')
+print("End Weather Test.")
