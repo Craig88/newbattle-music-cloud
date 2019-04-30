@@ -16,12 +16,12 @@ scope = 'user-library-read'
 # Links to tracks on Spotify
 # https://community.spotify.com/t5/Spotify-Answers/What-s-a-Spotify-URI/ta-p/919201
 
-debug_track = "spotify:track:5p1ex0pXv6jSPJ6QbumQpD"  # Piece of your heart by Meduza
+debug_track = "spotify:track:3UL6Lzsocv9Ucizgzid2B0"  # We Like To Party by Venga Boys
 showers_track = "spotify:track:5i66xrvSh1MjjyDd6zcwgj"  # Umbrella by Rihanna
-sunny_track = "spotify:track:3pf96IFggfQuT6Gafqx2rt"  # Sunny by Boney M
+sunny_track = "spotify:track:3UL6Lzsocv9Ucizgzid2B0"  # We Like To Party by Venga Boys
 cloudy_track = "spotify:track:3xhhsvui4g3hkMtA89f2uX"  # Cloudbusting by Just Us
 
-debug_mode = False  # set to True to turn on a debugging mode
+debug_mode = True  # set to True to turn on a debugging mode
 
 
 def spotify_setup():
