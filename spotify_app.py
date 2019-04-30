@@ -22,7 +22,7 @@ sunny_track = "spotify:track:3UL6Lzsocv9Ucizgzid2B0"  # We Like To Party by Veng
 cloudy_track = "spotify:track:3xhhsvui4g3hkMtA89f2uX"  # Cloudbusting by Just Us
 fog_track = "spotify:track:4rhUBIlzi7zgV7TryhVujl" # Edge of Darkness by Greta van Fleet
 snow_track = "spotify:track:2aibwv5hGXSgw7Yru8IYTO" # Snow by Red Hot Chilli Peppers
-"
+
 
 debug_mode = True  # set to True to turn on a debugging mode
 
