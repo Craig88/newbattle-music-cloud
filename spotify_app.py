@@ -27,7 +27,7 @@ hail_track = "spotify:track:7ny2ATvjtKszCpLpfsGnVQ" # Hail
 wind_track = "spotify:track:6zeE5tKyr8Nu882DQhhSQI" #Dust in the wind by Kansas
 storm_track = "spotify:track:575RK5IvYKYgT8rTgDVrZm" #Lightning by little mix
 
-debug_mode = True  # set to True to turn on a debugging mode
+debug_mode = False  # set to True to turn on a debugging mode
 
 
 def spotify_setup():
