@@ -9,7 +9,7 @@ spotify_app.spotify_setup()
 weather = weather_app.weather_setup()
 
 # Set the weather for the city
-weather.get_yahoo_weather_by_city("Glasgow", Unit.celsius)
+weather.get_yahoo_weather_by_location(55.873817, -3.047995)
 print("The city is set to %s" % weather.location.city)
 print("The weather conditions are currently %s" % weather.condition.text)
 print("The weather status code is %s" % weather.condition.code)
