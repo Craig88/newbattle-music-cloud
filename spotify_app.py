@@ -21,6 +21,8 @@ showers_track = "spotify:track:5i66xrvSh1MjjyDd6zcwgj"  # Umbrella by Rihanna
 sunny_track = "spotify:track:3UL6Lzsocv9Ucizgzid2B0"  # We Like To Party by Venga Boys
 cloudy_track = "spotify:track:3xhhsvui4g3hkMtA89f2uX"  # Cloudbusting by Just Us
 fog_track = "spotify:track:4rhUBIlzi7zgV7TryhVujl" # Edge of Darkness by Greta van Fleet
+snow_track = "spotify:track:2aibwv5hGXSgw7Yru8IYTO" # Snow by Red Hot Chilli Peppers
+"
 
 debug_mode = True  # set to True to turn on a debugging mode
 
@@ -52,7 +54,7 @@ def play_track_for_weather(weather):
 
     if (debug_mode):
         print("Debug mode - Playing debug track")
-        track = sp.track(fog_track)  # Get the track from Spotify
+        track = sp.track(snow_track)  # Get the track from Spotify
         preview_track = track['preview_url']  # Get the link to the 30 second clip
         song = vlc.MediaPlayer(preview_track)
         song.play()  # Play the 30 second clip
@@ -84,6 +86,14 @@ def play_track_for_weather(weather):
     elif weather.code == 20:  # Code 20: Fog
         print("We need to play a Fog track")
         track = sp.track(fog_track)
+        preview_track = track['preview_url']
+        print(preview_track)
+        song = vlc.MediaPlayer(preview_track)
+        song.play()
+
+    elif weather.code == 16:  # Code 16: Snow
+        print("We need to play a Snow track")
+        track = sp.track(snow_track)
         preview_track = track['preview_url']
         print(preview_track)
         song = vlc.MediaPlayer(preview_track)
