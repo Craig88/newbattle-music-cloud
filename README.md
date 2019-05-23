@@ -1,4 +1,4 @@
-# newbattle-sound-cloud
+# newbattle-music-cloud
 
 *draft version, in development*
 
