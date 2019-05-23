@@ -21,11 +21,11 @@ showers_track = "spotify:track:5i66xrvSh1MjjyDd6zcwgj"  # Umbrella by Rihanna
 sunny_track = "spotify:track:3UL6Lzsocv9Ucizgzid2B0"  # We Like To Party by Venga Boys
 cloudy_track = "spotify:track:3xhhsvui4g3hkMtA89f2uX"  # Cloudbusting by Just Us
 fog_track = "spotify:track:4rhUBIlzi7zgV7TryhVujl" # Edge of Darkness by Greta van Fleet
-snow_track = "spotify:track:2aibwv5hGXSgw7Yru8IYTO" # Snow by Red Hot Chilli Peppers
-rain_track = "spotify:track:5PKWUDfQFtc5qqo8cs1gQp" # Set Fire to the Rain by Adele
-hail_track = "spotify:track:7ny2ATvjtKszCpLpfsGnVQ" # Hail
-wind_track = "spotify:track:6zeE5tKyr8Nu882DQhhSQI" #Dust in the wind by Kansas
-storm_track = "spotify:track:575RK5IvYKYgT8rTgDVrZm" #Lightning by little mix
+snow_track = "spotify:track:2aibwv5hGXSgw7Yru8IYTO"  # Snow by Red Hot Chilli Peppers
+rain_track = "spotify:track:5PKWUDfQFtc5qqo8cs1gQp"  # Set Fire to the Rain by Adele
+hail_track = "spotify:track:7ny2ATvjtKszCpLpfsGnVQ"  # Hail
+wind_track = "spotify:track:6zeE5tKyr8Nu882DQhhSQI"  # Dust in the wind by Kansas
+storm_track = "spotify:track:575RK5IvYKYgT8rTgDVrZm" # Lightning by Little Mix
 
 debug_mode = False  # set to True to turn on a debugging mode
 
@@ -112,7 +112,7 @@ def play_track_for_weather(weather):
 
     elif weather.code == 17:  # Code 17: Hail
         print("We need to play a Hail track")
-        track = sp.track(Hail_track)
+        track = sp.track(hail_track)
         preview_track = track['preview_url']
         print(preview_track)
         song = vlc.MediaPlayer(preview_track)
