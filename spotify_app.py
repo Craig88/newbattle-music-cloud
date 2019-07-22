@@ -135,8 +135,12 @@ def play_track_for_weather(weather):
         song.play()
 
     else:
-        print("Not a recognised weather code.")
-        return
+        print("Not a recognised weather code. But playing something anyway...")
+        track = sp.track(sunny_track)
+        preview_track = track['preview_url']
+        print(preview_track)
+        song = vlc.MediaPlayer(preview_track)
+        song.play()
 
     while True:  # This loops repeats until the song has stopped playing
         time.sleep(1)  # wait a second
