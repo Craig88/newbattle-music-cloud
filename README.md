@@ -1,10 +1,9 @@
-# newbattle-music-cloud
+# Newbattle Music Cloud
 
-*draft version, in development*
-
-Play music snippets based on current weather conditions. Uses live data from Yahoo Weather and Spotify.
+<img src="photo-cloud.jpg" width="400">
 
 Made with [Newbattle High School][1] students and the [University of Edinburgh][2] as part of the [Everybody Makes The School][3] project.
+Play music snippets based on current weather conditions. Uses live data from Yahoo Weather and Spotify.
 
 ### Required Python packages
 The `requirements.txt` file lists all the Python packages needed to run the app.
@@ -59,7 +58,7 @@ python3 cloud.py
 
 ### Other useful titbits
 Other libraries that might be needed:
-gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
+`gstreamer1.0-tools` `gstreamer1.0-plugins-good` `gstreamer1.0-plugins-ugly` 
 
 ### Using Cron to schedule the app
 
