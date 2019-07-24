@@ -4,7 +4,7 @@
 
 Play music snippets based on current weather conditions. Uses live data from Yahoo Weather and Spotify.
 
-Made with [Newbattle High School](http://www.newbattle.org.uk/) students and the [University of Edinburgh](https://www.de.ed.ac.uk/) as part of the [Everybody Makes The School](https://everybodymakes.com/) project.
+Made with [Newbattle High School][1] students and the [University of Edinburgh][2] as part of the [Everybody Makes The School][3] project.
 
 ### Required Python packages
 The `requirements.txt` file lists all the Python packages needed to run the app.
@@ -63,8 +63,8 @@ gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
 
 ### Using Cron to schedule the app
 
-<https://crontab-generator.org/>
-<https://www.raspberrypi.org/documentation/linux/usage/cron.md>
+[https://crontab-generator.org/][4]
+[https://www.raspberrypi.org/documentation/linux/usage/cron.md][5]
 
 ```sh
 python3 test_cron.py >> log.txt
@@ -76,9 +76,9 @@ python3 /home/pi/Desktop/newbattle-sound-cloud/test_cron.py >> /home/pi/Desktop/
 * * * * * python3 /home/pi/Desktop/newbattle-sound-cloud/test_vlc.py >> /home/p$
 ```
 
-<https://developer.yahoo.com/weather/documentation.html>
+[https://developer.yahoo.com/weather/documentation.html][6]
 
-Condition codes <https://developer.yahoo.com/weather/documentation.html#codes>
+Condition codes [https://developer.yahoo.com/weather/documentation.html#codes][7]
 
 
 This command switches the audio output to HDMI:
@@ -87,3 +87,12 @@ amixer cset numid=3 2
 ```
 
 Here the output is set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic.
+
+
+[1]:	http://www.newbattle.org.uk/
+[2]:	https://www.de.ed.ac.uk/
+[3]:	https://everybodymakes.com/
+[4]:	https://crontab-generator.org/
+[5]:	https://www.raspberrypi.org/documentation/linux/usage/cron.md
+[6]:	https://developer.yahoo.com/weather/documentation.html
+[7]:	https://developer.yahoo.com/weather/documentation.html#codes
