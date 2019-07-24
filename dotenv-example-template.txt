@@ -1,0 +1,12 @@
+# Put your own keys in a file like this
+# Treat these like passwords and keep them secret.
+# Save the file as ".env"
+
+
+SPOTIFY_USERNAME='ADD-YOUR-USERNAME-HERE'
+SPOTIFY_CLIENT_ID='ADD-YOUR-KEY-HERE'
+SPOTIFY_CLIENT_SECRET='ADD-YOUR-KEY-HERE'
+
+YAHOO_APP_ID='ADD-YOUR-ID-HERE'
+YAHOO_API_KEY='ADD-YOUR-KEY-HERE'
+YAHOO_API_SECRET='ADD-YOUR-KEY-HERE'
