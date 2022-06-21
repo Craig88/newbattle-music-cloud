@@ -7,7 +7,7 @@ guizero==0.6.3
 httplib2==0.12.1
 idna==2.8
 mccabe==0.6.1
-numpy==1.16.2
+numpy==1.22.0
 oauth2==1.9.0.post1
 pgzero==1.2
 playsound==1.2.2
